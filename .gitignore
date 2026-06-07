@@ -1,0 +1,17 @@
+# Build output
+build/
+
+# VS Code machine-specific settings
+.vscode/settings.json
+
+# Compiled artifacts
+*.exe
+*.pdb
+*.obj
+*.o
+*.lib
+*.dll
+*.a
+
+# CMake user files
+CMakeUserPresets.json
