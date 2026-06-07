@@ -12,7 +12,6 @@ class Window {
 		~Window();
 
 		void Tick();
-
 		bool isLive() const;
 	private:
 		std::unique_ptr<GLFWwindow, GLFWwindowDeleter> window;
