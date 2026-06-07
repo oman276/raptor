@@ -4,11 +4,67 @@
     <ClCompile Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\dawn_proc_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_cpp_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_enum_class_bitmasks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu_cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu_cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu_cpp_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu_cpp_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\webgpu\webgpu_cpp_chained_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\dawn_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\src\dawn\common\Version_autogen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{511E26F9-7C1F-3ABC-A07E-04187395D2C4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{05961AAC-C822-3137-B6A2-9AF547EA558C}</UniqueIdentifier>
     </Filter>

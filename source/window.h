@@ -1,5 +1,10 @@
 #include <GLFW/glfw3.h>
 #include <string>
+#include <memory>
+
+struct GLFWwindowDeleter {
+	void operator()(GLFWwindow* window) const { glfwDestroyWindow(window); }
+};
 
 class Window {
 	public:
@@ -8,7 +13,7 @@ class Window {
 
 		void Tick();
 
-		const GLFWwindow* GetGLFWWindow() const { return window; }
+		bool isLive() const;
 	private:
-		GLFWwindow* window;
+		std::unique_ptr<GLFWwindow, GLFWwindowDeleter> window;
 };

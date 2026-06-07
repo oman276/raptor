@@ -5,6 +5,36 @@
       <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\Debug\dawn_headers</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\Debug\dawn_version</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\Debug\dawncpp_headers</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\partition_alloc\Debug\partition_alloc</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\spirv-tools\source\Debug\spirv-tools-tables</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\spirv-tools\source\Debug\core_tables</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\spirv-tools\source\Debug\spirv-tools-header-DebugInfo</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\spirv-tools\source\Debug\spirv-tools-header-OpenCLDebugInfo100</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\spirv-tools\source\Debug\extinst_tables</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\vulkan-utility-libraries\src\include\Debug\VulkanUtilityHeaders</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\Debug\Raptor.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

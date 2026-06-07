@@ -949,6 +949,8 @@ protobuf_VERBOSE:BOOL=OFF
 //Build with zlib support
 protobuf_WITH_ZLIB:BOOL=ON
 
+sdk_path:STRING=C:/Program Files (x86)/Windows Kits/10
+
 //Value Computed by CMake
 spirv-tools_BINARY_DIR:STATIC=C:/Users/User/Desktop/Owen's Stuff/Projects/raptor/build/dawn/third_party/spirv-tools
 

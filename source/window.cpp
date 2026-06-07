@@ -10,14 +10,18 @@ Window::Window(const std::string& title, const int width, const int height) {
 	if (!glfwInit()) {
 		return;
 	}
-	window = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
+	window = std::unique_ptr<GLFWwindow, GLFWwindowDeleter>(glfwCreateWindow(width, height, title.c_str(), NULL, NULL));
 }
 
 Window::~Window() {
-	glfwDestroyWindow(window);
+	window.reset();
 	glfwTerminate();
 }
 
 void Window::Tick() {
 	glfwPollEvents();
+}
+
+bool Window::isLive() const {
+	return !glfwWindowShouldClose(window.get());
 }

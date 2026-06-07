@@ -86,6 +86,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
     <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -99,6 +101,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -106,9 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +120,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dawn\src\dawn\native\Debug\webgpu_dawn.lib;dawn\src\dawn\glfw\Debug\dawn_glfw.lib;dawn\third_party\glfw3\src\src\Debug\glfw3.lib;user32.lib;onecore_apiset.lib;dxguid.lib;user32.lib;onecore_apiset.lib;dxguid.lib;dawn\src\dawn\common\Debug\dawn_common.lib;dawn\third_party\abseil\absl\container\Debug\absl_raw_hash_set.lib;dawn\third_party\abseil\absl\strings\Debug\absl_cord.lib;dawn\third_party\abseil\absl\strings\Debug\absl_cordz_info.lib;dawn\third_party\abseil\absl\strings\Debug\absl_cord_internal.lib;dawn\third_party\abseil\absl\strings\Debug\absl_cordz_functions.lib;dawn\third_party\abseil\absl\strings\Debug\absl_cordz_handle.lib;dawn\third_party\abseil\absl\crc\Debug\absl_crc_cord_state.lib;dawn\third_party\abseil\absl\crc\Debug\absl_crc32c.lib;dawn\third_party\abseil\absl\crc\Debug\absl_crc_internal.lib;dawn\third_party\abseil\absl\crc\Debug\absl_crc_cpu_detect.lib;dawn\third_party\abseil\absl\strings\Debug\absl_str_format_internal.lib;dawn\third_party\abseil\absl\hash\Debug\absl_hash.lib;dawn\third_party\abseil\absl\hash\Debug\absl_city.lib;dawn\third_party\abseil\absl\container\Debug\absl_hashtablez_sampler.lib;dawn\third_party\abseil\absl\profiling\Debug\absl_exponential_biased.lib;dawn\third_party\abseil\absl\synchronization\Debug\absl_synchronization.lib;dawn\third_party\abseil\absl\synchronization\Debug\absl_graphcycles_internal.lib;dawn\third_party\abseil\absl\synchronization\Debug\absl_kernel_timeout_internal.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_stacktrace.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_symbolize.lib;dawn\third_party\abseil\absl\base\Debug\absl_malloc_internal.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_debugging_internal.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_demangle_internal.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_demangle_rust.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_decode_rust_punycode.lib;dawn\third_party\abseil\absl\debugging\Debug\absl_utf8_for_code_point.lib;dawn\third_party\abseil\absl\base\Debug\absl_tracing_internal.lib;dawn\third_party\abseil\absl\time\Debug\absl_time.lib;dawn\third_party\abseil\absl\strings\Debug\absl_strings.lib;dawn\third_party\abseil\absl\numeric\Debug\absl_int128.lib;dawn\third_party\abseil\absl\strings\Debug\absl_strings_internal.lib;dawn\third_party\abseil\absl\base\Debug\absl_base.lib;dawn\third_party\abseil\absl\base\Debug\absl_spinlock_wait.lib;dawn\third_party\abseil\absl\types\Debug\absl_source_location.lib;dawn\third_party\abseil\absl\time\Debug\absl_civil_time.lib;dawn\third_party\abseil\absl\time\Debug\absl_time_zone.lib;dawn\third_party\abseil\absl\base\Debug\absl_throw_delegate.lib;dawn\third_party\abseil\absl\base\Debug\absl_raw_logging_internal.lib;dawn\third_party\abseil\absl\base\Debug\absl_log_severity.lib;-ignore:4221;dawn\src\utils\Debug\dawn_shared_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -131,6 +135,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
     <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -143,6 +149,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -152,9 +159,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -162,7 +170,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dawn\src\dawn\native\Release\webgpu_dawn.lib;dawn\src\dawn\glfw\Release\dawn_glfw.lib;dawn\third_party\glfw3\src\src\Release\glfw3.lib;user32.lib;onecore_apiset.lib;dxguid.lib;user32.lib;onecore_apiset.lib;dxguid.lib;dawn\src\dawn\common\Release\dawn_common.lib;dawn\third_party\abseil\absl\container\Release\absl_raw_hash_set.lib;dawn\third_party\abseil\absl\strings\Release\absl_cord.lib;dawn\third_party\abseil\absl\strings\Release\absl_cordz_info.lib;dawn\third_party\abseil\absl\strings\Release\absl_cord_internal.lib;dawn\third_party\abseil\absl\strings\Release\absl_cordz_functions.lib;dawn\third_party\abseil\absl\strings\Release\absl_cordz_handle.lib;dawn\third_party\abseil\absl\crc\Release\absl_crc_cord_state.lib;dawn\third_party\abseil\absl\crc\Release\absl_crc32c.lib;dawn\third_party\abseil\absl\crc\Release\absl_crc_internal.lib;dawn\third_party\abseil\absl\crc\Release\absl_crc_cpu_detect.lib;dawn\third_party\abseil\absl\strings\Release\absl_str_format_internal.lib;dawn\third_party\abseil\absl\hash\Release\absl_hash.lib;dawn\third_party\abseil\absl\hash\Release\absl_city.lib;dawn\third_party\abseil\absl\container\Release\absl_hashtablez_sampler.lib;dawn\third_party\abseil\absl\profiling\Release\absl_exponential_biased.lib;dawn\third_party\abseil\absl\synchronization\Release\absl_synchronization.lib;dawn\third_party\abseil\absl\synchronization\Release\absl_graphcycles_internal.lib;dawn\third_party\abseil\absl\synchronization\Release\absl_kernel_timeout_internal.lib;dawn\third_party\abseil\absl\debugging\Release\absl_stacktrace.lib;dawn\third_party\abseil\absl\debugging\Release\absl_symbolize.lib;dawn\third_party\abseil\absl\base\Release\absl_malloc_internal.lib;dawn\third_party\abseil\absl\debugging\Release\absl_debugging_internal.lib;dawn\third_party\abseil\absl\debugging\Release\absl_demangle_internal.lib;dawn\third_party\abseil\absl\debugging\Release\absl_demangle_rust.lib;dawn\third_party\abseil\absl\debugging\Release\absl_decode_rust_punycode.lib;dawn\third_party\abseil\absl\debugging\Release\absl_utf8_for_code_point.lib;dawn\third_party\abseil\absl\base\Release\absl_tracing_internal.lib;dawn\third_party\abseil\absl\time\Release\absl_time.lib;dawn\third_party\abseil\absl\strings\Release\absl_strings.lib;dawn\third_party\abseil\absl\numeric\Release\absl_int128.lib;dawn\third_party\abseil\absl\strings\Release\absl_strings_internal.lib;dawn\third_party\abseil\absl\base\Release\absl_base.lib;dawn\third_party\abseil\absl\base\Release\absl_spinlock_wait.lib;dawn\third_party\abseil\absl\types\Release\absl_source_location.lib;dawn\third_party\abseil\absl\time\Release\absl_civil_time.lib;dawn\third_party\abseil\absl\time\Release\absl_time_zone.lib;dawn\third_party\abseil\absl\base\Release\absl_throw_delegate.lib;dawn\third_party\abseil\absl\base\Release\absl_raw_logging_internal.lib;dawn\third_party\abseil\absl\base\Release\absl_log_severity.lib;-ignore:4221;dawn\src\utils\Release\dawn_shared_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -177,6 +185,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
     <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -189,6 +199,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -198,9 +209,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,7 +220,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dawn\src\dawn\native\MinSizeRel\webgpu_dawn.lib;dawn\src\dawn\glfw\MinSizeRel\dawn_glfw.lib;dawn\third_party\glfw3\src\src\MinSizeRel\glfw3.lib;user32.lib;onecore_apiset.lib;dxguid.lib;user32.lib;onecore_apiset.lib;dxguid.lib;dawn\src\dawn\common\MinSizeRel\dawn_common.lib;dawn\third_party\abseil\absl\container\MinSizeRel\absl_raw_hash_set.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_cord.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_cordz_info.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_cord_internal.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_cordz_functions.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_cordz_handle.lib;dawn\third_party\abseil\absl\crc\MinSizeRel\absl_crc_cord_state.lib;dawn\third_party\abseil\absl\crc\MinSizeRel\absl_crc32c.lib;dawn\third_party\abseil\absl\crc\MinSizeRel\absl_crc_internal.lib;dawn\third_party\abseil\absl\crc\MinSizeRel\absl_crc_cpu_detect.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_str_format_internal.lib;dawn\third_party\abseil\absl\hash\MinSizeRel\absl_hash.lib;dawn\third_party\abseil\absl\hash\MinSizeRel\absl_city.lib;dawn\third_party\abseil\absl\container\MinSizeRel\absl_hashtablez_sampler.lib;dawn\third_party\abseil\absl\profiling\MinSizeRel\absl_exponential_biased.lib;dawn\third_party\abseil\absl\synchronization\MinSizeRel\absl_synchronization.lib;dawn\third_party\abseil\absl\synchronization\MinSizeRel\absl_graphcycles_internal.lib;dawn\third_party\abseil\absl\synchronization\MinSizeRel\absl_kernel_timeout_internal.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_stacktrace.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_symbolize.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_malloc_internal.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_debugging_internal.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_demangle_internal.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_demangle_rust.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_decode_rust_punycode.lib;dawn\third_party\abseil\absl\debugging\MinSizeRel\absl_utf8_for_code_point.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_tracing_internal.lib;dawn\third_party\abseil\absl\time\MinSizeRel\absl_time.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_strings.lib;dawn\third_party\abseil\absl\numeric\MinSizeRel\absl_int128.lib;dawn\third_party\abseil\absl\strings\MinSizeRel\absl_strings_internal.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_base.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_spinlock_wait.lib;dawn\third_party\abseil\absl\types\MinSizeRel\absl_source_location.lib;dawn\third_party\abseil\absl\time\MinSizeRel\absl_civil_time.lib;dawn\third_party\abseil\absl\time\MinSizeRel\absl_time_zone.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_throw_delegate.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_raw_logging_internal.lib;dawn\third_party\abseil\absl\base\MinSizeRel\absl_log_severity.lib;-ignore:4221;dawn\src\utils\MinSizeRel\dawn_shared_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -223,6 +235,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
     <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -236,6 +250,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -243,9 +258,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\abseil-cpp;C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\third_party\glfw3\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -253,7 +269,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dawn\src\dawn\native\RelWithDebInfo\webgpu_dawn.lib;dawn\src\dawn\glfw\RelWithDebInfo\dawn_glfw.lib;dawn\third_party\glfw3\src\src\RelWithDebInfo\glfw3.lib;user32.lib;onecore_apiset.lib;dxguid.lib;user32.lib;onecore_apiset.lib;dxguid.lib;dawn\src\dawn\common\RelWithDebInfo\dawn_common.lib;dawn\third_party\abseil\absl\container\RelWithDebInfo\absl_raw_hash_set.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_cord.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_cordz_info.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_cord_internal.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_cordz_functions.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_cordz_handle.lib;dawn\third_party\abseil\absl\crc\RelWithDebInfo\absl_crc_cord_state.lib;dawn\third_party\abseil\absl\crc\RelWithDebInfo\absl_crc32c.lib;dawn\third_party\abseil\absl\crc\RelWithDebInfo\absl_crc_internal.lib;dawn\third_party\abseil\absl\crc\RelWithDebInfo\absl_crc_cpu_detect.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_str_format_internal.lib;dawn\third_party\abseil\absl\hash\RelWithDebInfo\absl_hash.lib;dawn\third_party\abseil\absl\hash\RelWithDebInfo\absl_city.lib;dawn\third_party\abseil\absl\container\RelWithDebInfo\absl_hashtablez_sampler.lib;dawn\third_party\abseil\absl\profiling\RelWithDebInfo\absl_exponential_biased.lib;dawn\third_party\abseil\absl\synchronization\RelWithDebInfo\absl_synchronization.lib;dawn\third_party\abseil\absl\synchronization\RelWithDebInfo\absl_graphcycles_internal.lib;dawn\third_party\abseil\absl\synchronization\RelWithDebInfo\absl_kernel_timeout_internal.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_stacktrace.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_symbolize.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_malloc_internal.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_debugging_internal.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_demangle_internal.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_demangle_rust.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_decode_rust_punycode.lib;dawn\third_party\abseil\absl\debugging\RelWithDebInfo\absl_utf8_for_code_point.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_tracing_internal.lib;dawn\third_party\abseil\absl\time\RelWithDebInfo\absl_time.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_strings.lib;dawn\third_party\abseil\absl\numeric\RelWithDebInfo\absl_int128.lib;dawn\third_party\abseil\absl\strings\RelWithDebInfo\absl_strings_internal.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_base.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_spinlock_wait.lib;dawn\third_party\abseil\absl\types\RelWithDebInfo\absl_source_location.lib;dawn\third_party\abseil\absl\time\RelWithDebInfo\absl_civil_time.lib;dawn\third_party\abseil\absl\time\RelWithDebInfo\absl_time_zone.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_throw_delegate.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_raw_logging_internal.lib;dawn\third_party\abseil\absl\base\RelWithDebInfo\absl_log_severity.lib;-ignore:4221;dawn\src\utils\RelWithDebInfo\dawn_shared_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -325,6 +341,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\main.cpp" />
+    <ClCompile Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\window.cpp" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\source\window.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_glfw.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\dawn_proc_table.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_cpp.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_cpp_print.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\dawn\include\webgpu\webgpu_enum_class_bitmasks.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu_cpp.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu_cpp.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\webgpu_cpp_print.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\wire\client\webgpu_cpp_print.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\webgpu\webgpu_cpp_chained_struct.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\include\dawn\dawn_version.h" />
+    <ClInclude Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\gen\src\dawn\common\Version_autogen.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -333,6 +366,206 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_base.vcxproj">
+      <Project>{C2B80551-FA42-3087-93C6-5B5774A0319A}</Project>
+      <Name>absl_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\hash\absl_city.vcxproj">
+      <Project>{7440674D-8DD5-3FD6-B1AA-C259A9996E6F}</Project>
+      <Name>absl_city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\time\absl_civil_time.vcxproj">
+      <Project>{C894BFBB-5F54-33CC-92E1-B074EF5EE336}</Project>
+      <Name>absl_civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_cord.vcxproj">
+      <Project>{3A233EF4-E374-32F3-BF98-AADC12840B86}</Project>
+      <Name>absl_cord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_cord_internal.vcxproj">
+      <Project>{E4F07129-0B65-3294-848B-740928D05CB2}</Project>
+      <Name>absl_cord_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_cordz_functions.vcxproj">
+      <Project>{B6CD601F-35B1-358C-A5F9-CB15922F9B8D}</Project>
+      <Name>absl_cordz_functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_cordz_handle.vcxproj">
+      <Project>{37B531FA-8D9F-38E0-8AAD-36966F9E2A6A}</Project>
+      <Name>absl_cordz_handle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_cordz_info.vcxproj">
+      <Project>{B4325FB6-B3A0-344A-A104-BE4626C6D3DD}</Project>
+      <Name>absl_cordz_info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\crc\absl_crc32c.vcxproj">
+      <Project>{950BA27B-CAF5-3422-9192-AC03196A37DC}</Project>
+      <Name>absl_crc32c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\crc\absl_crc_cord_state.vcxproj">
+      <Project>{7C0CFCC9-41F3-3A0B-A4C9-7D20C8D2EAA4}</Project>
+      <Name>absl_crc_cord_state</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\crc\absl_crc_cpu_detect.vcxproj">
+      <Project>{8B001ACE-F71F-399F-94B3-242F41690C5A}</Project>
+      <Name>absl_crc_cpu_detect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\crc\absl_crc_internal.vcxproj">
+      <Project>{F13C1CCF-06CD-3971-9C42-17918755B425}</Project>
+      <Name>absl_crc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_debugging_internal.vcxproj">
+      <Project>{A75B17D3-A0F1-3EAA-982B-60D587A531FB}</Project>
+      <Name>absl_debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_decode_rust_punycode.vcxproj">
+      <Project>{E72BA791-29D3-31D2-843D-197CEF60514B}</Project>
+      <Name>absl_decode_rust_punycode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_demangle_internal.vcxproj">
+      <Project>{BF958A94-F0BF-30CD-8222-1341B56F23CE}</Project>
+      <Name>absl_demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_demangle_rust.vcxproj">
+      <Project>{A6EF9D96-6E54-37E9-8D0D-11CB0548CE07}</Project>
+      <Name>absl_demangle_rust</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\profiling\absl_exponential_biased.vcxproj">
+      <Project>{7A420656-BA6B-3B89-9812-258DE48903D5}</Project>
+      <Name>absl_exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\synchronization\absl_graphcycles_internal.vcxproj">
+      <Project>{66B2F843-5C95-31AB-AE2B-D69C4C92700E}</Project>
+      <Name>absl_graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\hash\absl_hash.vcxproj">
+      <Project>{D81527A6-2EB1-3C17-A39A-781571CDF5CD}</Project>
+      <Name>absl_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\container\absl_hashtablez_sampler.vcxproj">
+      <Project>{B6848F07-72B7-3A59-B93D-B4FAB056477B}</Project>
+      <Name>absl_hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\numeric\absl_int128.vcxproj">
+      <Project>{37897FAA-1D20-3596-9037-D4C51B2FB6D4}</Project>
+      <Name>absl_int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\synchronization\absl_kernel_timeout_internal.vcxproj">
+      <Project>{C93EA604-BB6C-39E7-AB59-0550ADFD3BA1}</Project>
+      <Name>absl_kernel_timeout_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_log_severity.vcxproj">
+      <Project>{9542108E-96C0-3338-893D-C249400B3685}</Project>
+      <Name>absl_log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_malloc_internal.vcxproj">
+      <Project>{3379ABC9-08F4-3633-943D-77AAC6F6ED09}</Project>
+      <Name>absl_malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\container\absl_raw_hash_set.vcxproj">
+      <Project>{D781962A-398C-3262-9005-31B111AC1045}</Project>
+      <Name>absl_raw_hash_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_raw_logging_internal.vcxproj">
+      <Project>{39C9BA74-527E-39EA-9FAA-909E71A3C4A6}</Project>
+      <Name>absl_raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\types\absl_source_location.vcxproj">
+      <Project>{A7F03E9C-2ABF-3F3F-930F-241ED1E47DFE}</Project>
+      <Name>absl_source_location</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_spinlock_wait.vcxproj">
+      <Project>{0784F6FB-38DB-3A8E-9037-D3130D994413}</Project>
+      <Name>absl_spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_stacktrace.vcxproj">
+      <Project>{EFD9BE52-69DA-3036-8FBB-4BA4A4C6EBC4}</Project>
+      <Name>absl_stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_str_format_internal.vcxproj">
+      <Project>{2905AD94-78D7-3D47-A278-40E3AA57178A}</Project>
+      <Name>absl_str_format_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_strings.vcxproj">
+      <Project>{37A91DF3-3F3D-3339-8EFE-5EB51AA80A13}</Project>
+      <Name>absl_strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\strings\absl_strings_internal.vcxproj">
+      <Project>{5D576EEB-BBBF-365A-86EE-974CD807A765}</Project>
+      <Name>absl_strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_symbolize.vcxproj">
+      <Project>{4954DFB5-C6C6-3C97-BFAD-886E4C3F344B}</Project>
+      <Name>absl_symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\synchronization\absl_synchronization.vcxproj">
+      <Project>{8255B83B-2D6C-3CC2-8718-759502966FDB}</Project>
+      <Name>absl_synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_throw_delegate.vcxproj">
+      <Project>{D5D1A706-6093-399B-AB01-D32565B11A62}</Project>
+      <Name>absl_throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\time\absl_time.vcxproj">
+      <Project>{86B24C65-F37D-32D3-812A-89D9B21B0786}</Project>
+      <Name>absl_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\time\absl_time_zone.vcxproj">
+      <Project>{5FB71063-4F5E-31D1-B1A3-8CD0CC5CF8D9}</Project>
+      <Name>absl_time_zone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\base\absl_tracing_internal.vcxproj">
+      <Project>{5E0181ED-C736-3D81-BE1E-21A8549D0FF3}</Project>
+      <Name>absl_tracing_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\abseil\absl\debugging\absl_utf8_for_code_point.vcxproj">
+      <Project>{A28AB83C-CACE-3220-A985-BB6917000417}</Project>
+      <Name>absl_utf8_for_code_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\common\dawn_common.vcxproj">
+      <Project>{CFECA242-2725-3360-806E-047548C29D9C}</Project>
+      <Name>dawn_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\glfw\dawn_glfw.vcxproj">
+      <Project>{0D2525C2-EF7C-34C9-906D-792A81ED62D9}</Project>
+      <Name>dawn_glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\dawn_headers.vcxproj">
+      <Project>{7DE421B3-1CDE-333F-B752-6133F8C0D758}</Project>
+      <Name>dawn_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\utils\dawn_shared_utils.vcxproj">
+      <Project>{B74A08BF-62EE-365A-A1DC-2E24D9897B86}</Project>
+      <Name>dawn_shared_utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\dawn_version.vcxproj">
+      <Project>{B740CC53-05D0-380A-894A-45CCBB936E37}</Project>
+      <Name>dawn_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\dawncpp_headers.vcxproj">
+      <Project>{BC55561F-098D-3C03-9790-6ED6D72AE1F4}</Project>
+      <Name>dawncpp_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\third_party\glfw3\src\src\glfw.vcxproj">
+      <Project>{F5C19EA6-A380-3995-A927-90C0E0D629CC}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\partition_alloc\partition_alloc.vcxproj">
+      <Project>{31DB38D0-3FC6-3251-8BC7-55C71B108247}</Project>
+      <Name>partition_alloc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\Owen's Stuff\Projects\raptor\build\dawn\src\dawn\native\webgpu_dawn.vcxproj">
+      <Project>{E18AFB4C-DEBB-397D-83C8-5D977C869532}</Project>
+      <Name>webgpu_dawn</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
