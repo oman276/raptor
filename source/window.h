@@ -1,6 +1,10 @@
+#pragma once
+
 #include <GLFW/glfw3.h>
 #include <string>
 #include <memory>
+
+class Graphics;
 
 struct GLFWwindowDeleter {
 	void operator()(GLFWwindow* window) const { glfwDestroyWindow(window); }
@@ -15,4 +19,5 @@ class Window {
 		bool isLive() const;
 	private:
 		std::unique_ptr<GLFWwindow, GLFWwindowDeleter> window;
+		std::unique_ptr<Graphics> graphics;
 };
